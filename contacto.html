@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Veritas Académica</title>
+    <meta name="description" content="Solicita asesoría académica por WhatsApp con Veritas Académica. Atención en Guatemala para tesis, correcciones, APA 7 y artículos científicos.">
+    <meta name="keywords" content="asesoría de tesis, corrección académica, normas APA 7, tesis Guatemala, artículos científicos, metodología, Veritas Académica">
+    <meta name="author" content="Veritas Académica">
+    <link rel="icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+<div class="topbar">
+    <div class="topbar-contenido">
+        <span>📱 WhatsApp: +502 5483-7668</span>
+        <span>📍 Guatemala</span>
+    </div>
+</div>
+
+<header class="header">
+    <a href="index.html" class="brand">
+        <img src="img/logo.png" alt="Logo Veritas Académica">
+        <div><strong>Veritas</strong><span>Académica</span></div>
+    </a>
+    <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="condiciones.html">Condiciones</a>
+        <a href="politicas.html">Políticas</a>
+        <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+    <a class="btn-header" href="https://wa.me/50254837668" target="_blank">Solicitar asesoría</a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<main>
+    <section class="page-hero">
+        <span class="etiqueta">Contacto</span>
+        <h1>Solicita una asesoría</h1>
+        <p>Completa la información y se abrirá WhatsApp con tu solicitud lista para enviar.</p>
+    </section>
+
+    <section class="seccion">
+        <div class="contacto-grid">
+            <div class="contacto-info reveal">
+                <h2>Hablemos de tu proyecto</h2>
+                <p>Mientras Veritas Académica no tenga dominio propio, WhatsApp será el canal principal de contacto.</p>
+                <p><strong>WhatsApp:</strong> +502 5483-7668</p>
+                <p><strong>Ubicación:</strong> Guatemala</p>
+
+                <div class="mini-lista">
+                    <p><strong>Antes de escribir, ten a mano:</strong></p>
+                    <ul>
+                        <li>Tipo de trabajo académico.</li>
+                        <li>Fecha aproximada de entrega.</li>
+                        <li>Estado actual del documento.</li>
+                        <li>Instrucciones de tu universidad, si las tienes.</li>
+                    </ul>
+                </div>
+
+                <a class="btn-primary" href="https://wa.me/50254837668" target="_blank">Escribir directamente por WhatsApp</a>
+            </div>
+
+            <form class="formulario reveal">
+                <label>Nombre</label>
+                <input id="nombre" type="text" placeholder="Tu nombre completo" required>
+
+                <label>WhatsApp</label>
+                <input id="telefono" type="text" placeholder="+502" required>
+
+                <label>Correo electrónico opcional</label>
+                <input id="correo" type="email" placeholder="Tu correo electrónico">
+
+                <label>Universidad o institución</label>
+                <input id="universidad" type="text" placeholder="Nombre de tu universidad">
+
+                <label>Carrera o área</label>
+                <input id="carrera" type="text" placeholder="Ejemplo: Medicina, Derecho, Administración">
+
+                <label>Nivel académico</label>
+                <select id="nivel">
+                    <option>Licenciatura</option>
+                    <option>Maestría</option>
+                    <option>Doctorado</option>
+                    <option>Técnico / Diplomado</option>
+                    <option>Otro</option>
+                </select>
+
+                <label>Tipo de proyecto</label>
+                <select id="tipoProyecto">
+                    <option>Asesoría de tesis</option>
+                    <option>Anteproyecto / plan de investigación</option>
+                    <option>Corrección de estilo</option>
+                    <option>Normas APA 7</option>
+                    <option>Normas Vancouver</option>
+                    <option>Artículo científico</option>
+                    <option>Tesis de medicina</option>
+                    <option>Otro</option>
+                </select>
+
+                <label>Estado actual del trabajo</label>
+                <select id="estadoTrabajo">
+                    <option>Solo tengo la idea</option>
+                    <option>Tengo tema aprobado</option>
+                    <option>Tengo anteproyecto</option>
+                    <option>Tengo capítulos avanzados</option>
+                    <option>Necesito correcciones finales</option>
+                    <option>Otro</option>
+                </select>
+
+                <label>Fecha aproximada de entrega</label>
+                <input id="fechaEntrega" type="text" placeholder="Ejemplo: dentro de 3 semanas">
+
+                <label>Mensaje</label>
+                <textarea id="mensaje" placeholder="Cuéntanos qué necesitas" required></textarea>
+
+                <button type="button" onclick="enviarWhatsApp()">Enviar solicitud por WhatsApp</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-bottom">© 2026 Veritas Académica. Todos los derechos reservados.</div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/50254837668" target="_blank">💬</a>
+<button class="top-button" id="topButton">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
