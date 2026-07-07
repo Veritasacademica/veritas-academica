@@ -954,3 +954,18 @@ a{
         font-size:34px;
     }
 }
+/* Corrección para mostrar contenido en celulares */
+.reveal{
+    opacity:1 !important;
+    transform:none !important;
+}
+
+.reveal.visible{
+    opacity:1 !important;
+    transform:none !important;
+}
+
+.documento-card{
+    opacity:1 !important;
+    transform:none !important;
+}
