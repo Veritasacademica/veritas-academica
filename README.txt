@@ -19,7 +19,7 @@ Cambios realizados:
    - GUIA_PUBLICACION_GITHUB_PAGES.txt
 
 4. Se mantuvo WhatsApp como canal principal:
-   +502 5483-7668
+   +502 3765-3725
 
 Archivos principales:
 - index.html
