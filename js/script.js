@@ -72,5 +72,5 @@ Mensaje:
 ${mensajeUsuario}`;
 
     const mensaje = encodeURIComponent(texto);
-    window.open(`https://wa.me/50254837668?text=${mensaje}`, '_blank');
+    window.open(`https://wa.me/50237653725?text=${mensaje}`, '_blank');
 }
