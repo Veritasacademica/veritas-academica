@@ -1,45 +1,27 @@
-VERITAS ACADÉMICA - V1.0.6
+VERITAS ACADÉMICA - V2.0.0 (noviembre 2026)
 
 Objetivo de esta versión:
-Preparar la página para publicación en GitHub Pages.
+Renovar el aspecto visual sin cambiar la esencia de la marca y hacer que la página cargue mucho más rápido.
 
 Cambios realizados:
-1. Se agregaron mejoras SEO básicas:
-   - Títulos más descriptivos.
-   - Meta descripciones.
-   - Palabras clave.
-   - Autor institucional.
-
-2. Se agregaron archivos para publicación:
-   - robots.txt
-   - sitemap.xml
-   - 404.html
-
-3. Se agregó guía de publicación:
-   - GUIA_PUBLICACION_GITHUB_PAGES.txt
-
-4. Se mantuvo WhatsApp como canal principal:
-   +502 3765-3725
+1. Diseño: iconos propios (sin emojis), secciones con fotografía, línea del proceso que se dibuja,
+   animaciones suaves al bajar (se apagan si el móvil tiene activado «reducir movimiento»).
+2. Fotografías gratuitas de Unsplash (licencia Unsplash: uso comercial gratuito, sin atribución obligatoria),
+   optimizadas en formato WebP.
+3. Velocidad: la portada pasó de unos 3 MB a unos 650 KB.
+4. Vista previa al compartir en WhatsApp y Facebook (img/compartir.jpg) y datos para Google.
+5. Cabecera y pie iguales en todas las páginas. Formulario sin ventanas emergentes del navegador.
 
 Archivos principales:
-- index.html
-- servicios.html
-- condiciones.html
-- politicas.html
-- contacto.html
-- 404.html
-- robots.txt
-- sitemap.xml
-- css/estilos.css
-- js/script.js
-- img/logo.png
-- img/hero.png
+- index.html, servicios.html, condiciones.html, politicas.html, contacto.html, 404.html
+- robots.txt, sitemap.xml
+- css/estilos.css, js/script.js
+- img/logo.png            -> logo oficial original (no se modifica)
+- img/logo-veritas.png    -> el mismo logo, solo reducido de tamaño para la web
+- img/favicon.png         -> el mismo logo, tamaño icono de pestaña
+- img/iconos.svg          -> iconos de la página
+- img/compartir.jpg       -> imagen que aparece al compartir el enlace
+- img/*.webp              -> fotografías
+- img/hero.png            -> imagen anterior de portada (ya no se usa)
 
-IMPORTANTE:
-Antes de publicar definitivamente, cuando GitHub te dé el enlace real, reemplaza en robots.txt y sitemap.xml:
-
-https://TU-USUARIO.github.io/TU-REPOSITORIO/
-
-por la URL real de Veritas Académica.
-
-Esta versión ya puede usarse como base para subir a GitHub Pages.
+WhatsApp, canal principal: +502 3765-3725

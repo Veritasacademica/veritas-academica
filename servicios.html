@@ -5,40 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios académicos | Veritas Académica</title>
     <meta name="description" content="Servicios de asesoría de tesis, anteproyecto, corrección de estilo, normas APA 7, Vancouver, metodología, artículos científicos y tesis de medicina.">
-    <meta name="keywords" content="asesoría de tesis, corrección académica, normas APA 7, tesis Guatemala, artículos científicos, metodología, Veritas Académica">
     <meta name="author" content="Veritas Académica">
-    <link rel="icon" href="img/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0B2C5D">
+    <link rel="canonical" href="https://veritasacademica.github.io/veritas-academica/servicios.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Veritas Académica">
+    <meta property="og:locale" content="es_GT">
+    <meta property="og:url" content="https://veritasacademica.github.io/veritas-academica/servicios.html">
+    <meta property="og:title" content="Servicios académicos | Veritas Académica">
+    <meta property="og:description" content="Asesoría de tesis, anteproyecto, corrección de estilo, normas APA 7, metodología y artículos científicos.">
+    <meta property="og:image" content="https://veritasacademica.github.io/veritas-academica/img/compartir.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/logo-veritas.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
+<!--CABECERA-->
 <div class="topbar">
     <div class="topbar-contenido">
-        <span>📱 WhatsApp: +502 3765-3725</span>
-        <span>📍 Guatemala</span>
+        <a href="https://wa.me/50237653725" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>WhatsApp: +502 3765-3725</a>
+        <span><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#ubicacion"/></svg>Guatemala · Lunes a viernes</span>
     </div>
 </div>
 
-<header class="header">
-    <a href="index.html" class="brand">
-        <img src="img/logo.png" alt="Logo Veritas Académica">
+<header class="header" id="cabecera">
+    <a href="index.html" class="brand" aria-label="Veritas Académica, ir al inicio">
+        <img src="img/logo-veritas.png" alt="Logo Veritas Académica" width="58" height="58">
         <div><strong>Veritas</strong><span>Académica</span></div>
     </a>
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Menú principal">
         <a href="index.html">Inicio</a>
-        <a href="servicios.html" class="active">Servicios</a>
+        <a href="servicios.html" data-pagina="servicios" class="active">Servicios</a>
         <a href="index.html#nosotros">Nosotros</a>
-        <a href="condiciones.html">Condiciones</a>
-        <a href="politicas.html">Políticas</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="condiciones.html" data-pagina="condiciones">Condiciones</a>
+        <a href="politicas.html" data-pagina="politicas">Políticas</a>
+        <a href="contacto.html" data-pagina="contacto">Contacto</a>
+        <a class="btn-primary nav-cta" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer">Solicitar asesoría</a>
     </nav>
-    <a class="btn-header" href="https://wa.me/50237653725" target="_blank">Solicitar asesoría</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <a class="btn-header" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer">Solicitar asesoría</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#menu"/></svg></button>
 </header>
+<!--/CABECERA-->
 
 <main>
     <section class="page-hero">
+        <div class="banda-fondo" data-parallax style="background-image:url('img/estanterias.webp')"></div>
         <span class="etiqueta">Servicios</span>
         <h1>Soluciones académicas profesionales</h1>
         <p>Servicios diseñados para acompañarte en distintas etapas de tu tesis, investigación o documento académico.</p>
@@ -46,15 +65,15 @@
 
     <section class="seccion">
         <div class="grid-servicios grande">
-            <article class="card reveal"><div class="icono">📘</div><h3>Asesoría de tesis</h3><p>Apoyo en tema, planteamiento del problema, objetivos, justificación, marco teórico, metodología, revisión de capítulos y estructura general.</p></article>
-            <article class="card reveal"><div class="icono">🧭</div><h3>Anteproyecto o plan de investigación</h3><p>Orientación para construir el diseño inicial de investigación con orden, claridad y coherencia académica.</p></article>
-            <article class="card reveal"><div class="icono">✍️</div><h3>Corrección de estilo</h3><p>Mejora de redacción, ortografía, puntuación, coherencia, claridad, fluidez y presentación académica.</p></article>
-            <article class="card reveal"><div class="icono">📚</div><h3>Normas APA 7</h3><p>Revisión de citas, referencias, márgenes, tablas, figuras, encabezados y formato documental.</p></article>
-            <article class="card reveal"><div class="icono">🏥</div><h3>Tesis de medicina</h3><p>Acompañamiento académico para trabajos relacionados con salud, protocolos, revisiones y estructura investigativa.</p></article>
-            <article class="card reveal"><div class="icono">🔬</div><h3>Artículos científicos</h3><p>Revisión de estructura, resumen, introducción, metodología, resultados, discusión y referencias.</p></article>
-            <article class="card reveal"><div class="icono">📊</div><h3>Metodología</h3><p>Orientación para enfoques cualitativos, cuantitativos o mixtos, variables, instrumentos y diseño metodológico.</p></article>
-            <article class="card reveal"><div class="icono">🧾</div><h3>Formato institucional</h3><p>Apoyo con lineamientos específicos de universidades, incluyendo formatos especiales cuando el cliente los proporcione.</p></article>
-            <article class="card reveal"><div class="icono">📝</div><h3>Revisión de avances</h3><p>Lectura y observaciones sobre documentos ya trabajados para detectar mejoras necesarias antes de entregar.</p></article>
+            <article class="card reveal"><div class="icono"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#tesis"/></svg></div><h3>Asesoría de tesis</h3><p>Apoyo en tema, planteamiento del problema, objetivos, justificación, marco teórico, metodología, revisión de capítulos y estructura general.</p></article>
+            <article class="card reveal" style="--retraso:.08s"><div class="icono"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#brujula"/></svg></div><h3>Anteproyecto o plan de investigación</h3><p>Orientación para construir el diseño inicial de investigación con orden, claridad y coherencia académica.</p></article>
+            <article class="card reveal" style="--retraso:.16s"><div class="icono"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#pluma"/></svg></div><h3>Corrección de estilo</h3><p>Revisión de redacción, ortografía, sintaxis y coherencia, con citación rigurosa. Te ayudamos a expresar tus propias ideas con claridad y a presentar un documento ordenado y ético para su revisión institucional, sin prometer certificados ni reportes externos.</p></article>
+            <article class="card reveal"><div class="icono"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#libro"/></svg></div><h3>Normas APA 7</h3><p>Aplicación cuidadosa de APA 7, Vancouver, Chicago y otros formatos, con revisión de citas y referencias. Adaptamos el trabajo a las guías y normativos que correspondan, incluidos lineamientos de USAC, UMG, URL, UVG, UFM u otra institución que el cliente proporcione.</p></article>
+            <article class="card reveal" style="--retraso:.08s"><div class="icono"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#salud"/></svg></div><h3>Tesis de medicina</h3><p>Acompañamiento académico para trabajos relacionados con salud, protocolos, revisiones y estructura investigativa.</p></article>
+            <article class="card reveal" style="--retraso:.16s"><div class="icono"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#matraz"/></svg></div><h3>Artículos científicos</h3><p>Revisión de estructura, resumen, introducción, metodología, resultados, discusión y referencias.</p></article>
+            <article class="card reveal"><div class="icono"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#grafica"/></svg></div><h3>Metodología</h3><p>Orientación para enfoques cualitativos, cuantitativos o mixtos, variables, instrumentos y diseño metodológico.</p></article>
+            <article class="card reveal" style="--retraso:.08s"><div class="icono"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#documento"/></svg></div><h3>Formato institucional</h3><p>Apoyo con lineamientos específicos de universidades, incluyendo formatos especiales cuando el cliente los proporcione.</p></article>
+            <article class="card reveal" style="--retraso:.16s"><div class="icono"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#lupa"/></svg></div><h3>Revisión de avances</h3><p>Lectura y observaciones sobre documentos ya trabajados para detectar mejoras necesarias antes de entregar.</p></article>
         </div>
     </section>
 
@@ -76,10 +95,10 @@
                     <li>Recomendaciones de mejora</li>
                     <li>Orientación sobre prioridades</li>
                 </ul>
-                <a href="contacto.html" class="btn-secondary">Consultar</a>
+                <a href="contacto.html" class="btn-secondary">Solicitar información</a>
             </article>
 
-            <article class="paquete destacado reveal">
+            <article class="paquete destacado reveal" style="--retraso:.1s">
                 <span class="paquete-etiqueta">Intermedio</span>
                 <h3>Corrección y formato</h3>
                 <p>Para documentos que necesitan mejorar forma, estructura y presentación.</p>
@@ -89,10 +108,10 @@
                     <li>Normas académicas</li>
                     <li>Formato y presentación</li>
                 </ul>
-                <a href="contacto.html" class="btn-primary">Solicitar</a>
+                <a href="contacto.html" class="btn-primary">Solicitar asesoría</a>
             </article>
 
-            <article class="paquete reveal">
+            <article class="paquete reveal" style="--retraso:.2s">
                 <span class="paquete-etiqueta">Completo</span>
                 <h3>Acompañamiento integral</h3>
                 <p>Para proyectos que requieren seguimiento ordenado por etapas.</p>
@@ -102,18 +121,58 @@
                     <li>Acompañamiento metodológico</li>
                     <li>Entrega según condiciones acordadas</li>
                 </ul>
-                <a href="contacto.html" class="btn-secondary">Cotizar</a>
+                <a href="contacto.html" class="btn-secondary">Solicitar cotización</a>
             </article>
+        </div>
+
+        <p class="aviso-cotizacion reveal">Los valores se cotizan a la medida según el volumen del documento, nivel académico, alcance, urgencia y estado actual del proyecto. Escríbenos para revisar tu caso.</p>
+    </section>
+
+    <section class="cta-final">
+        <div class="banda-fondo" data-parallax style="background-image:url('img/biblioteca.webp')"></div>
+        <div class="reveal">
+            <h2>Tu proyecto merece respaldo profesional</h2>
+            <p>Conversemos sobre tu necesidad académica y preparemos una propuesta clara.</p>
+            <a class="btn-primary" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>Solicitar asesoría por WhatsApp</a>
         </div>
     </section>
 </main>
 
+<!--PIE-->
 <footer class="footer">
-    <div class="footer-bottom">© 2026 Veritas Académica. Todos los derechos reservados.</div>
+    <div class="footer-grid">
+        <div>
+            <img src="img/logo-veritas.png" alt="Logo Veritas Académica" class="footer-logo" width="104" height="104" loading="lazy">
+            <p>Rigor académico para alcanzar tus metas.</p>
+        </div>
+
+        <div>
+            <h4>Enlaces</h4>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="index.html#nosotros">Nosotros</a>
+            <a href="condiciones.html">Condiciones</a>
+            <a href="politicas.html">Políticas</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div>
+            <h4>Información</h4>
+            <a class="footer-dato" href="https://wa.me/50237653725" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>WhatsApp: +502 3765-3725</a>
+            <p class="footer-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#ubicacion"/></svg>Guatemala</p>
+            <p class="footer-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#reloj"/></svg>Lunes a viernes</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Veritas Académica. Todos los derechos reservados.
+    </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/50237653725" target="_blank">💬</a>
-<button class="top-button" id="topButton">↑</button>
+<a class="whatsapp-float" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg></a>
+<button class="top-button" id="topButton" aria-label="Volver arriba"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#arriba"/></svg></button>
+<!--/PIE-->
+
 <script src="js/script.js"></script>
 </body>
 </html>

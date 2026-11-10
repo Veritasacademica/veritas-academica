@@ -5,40 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Veritas Académica</title>
     <meta name="description" content="Solicita asesoría académica por WhatsApp con Veritas Académica. Atención en Guatemala para tesis, correcciones, APA 7 y artículos científicos.">
-    <meta name="keywords" content="asesoría de tesis, corrección académica, normas APA 7, tesis Guatemala, artículos científicos, metodología, Veritas Académica">
     <meta name="author" content="Veritas Académica">
-    <link rel="icon" href="img/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0B2C5D">
+    <link rel="canonical" href="https://veritasacademica.github.io/veritas-academica/contacto.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Veritas Académica">
+    <meta property="og:locale" content="es_GT">
+    <meta property="og:url" content="https://veritasacademica.github.io/veritas-academica/contacto.html">
+    <meta property="og:title" content="Contacto | Veritas Académica">
+    <meta property="og:description" content="Cuéntanos tu proyecto y te respondemos por WhatsApp.">
+    <meta property="og:image" content="https://veritasacademica.github.io/veritas-academica/img/compartir.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/logo-veritas.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
+<!--CABECERA-->
 <div class="topbar">
     <div class="topbar-contenido">
-        <span>📱 WhatsApp: +502 3765-3725</span>
-        <span>📍 Guatemala</span>
+        <a href="https://wa.me/50237653725" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>WhatsApp: +502 3765-3725</a>
+        <span><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#ubicacion"/></svg>Guatemala · Lunes a viernes</span>
     </div>
 </div>
 
-<header class="header">
-    <a href="index.html" class="brand">
-        <img src="img/logo.png" alt="Logo Veritas Académica">
+<header class="header" id="cabecera">
+    <a href="index.html" class="brand" aria-label="Veritas Académica, ir al inicio">
+        <img src="img/logo-veritas.png" alt="Logo Veritas Académica" width="58" height="58">
         <div><strong>Veritas</strong><span>Académica</span></div>
     </a>
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Menú principal">
         <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
+        <a href="servicios.html" data-pagina="servicios">Servicios</a>
         <a href="index.html#nosotros">Nosotros</a>
-        <a href="condiciones.html">Condiciones</a>
-        <a href="politicas.html">Políticas</a>
-        <a href="contacto.html" class="active">Contacto</a>
+        <a href="condiciones.html" data-pagina="condiciones">Condiciones</a>
+        <a href="politicas.html" data-pagina="politicas">Políticas</a>
+        <a href="contacto.html" data-pagina="contacto" class="active">Contacto</a>
+        <a class="btn-primary nav-cta" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer">Solicitar asesoría</a>
     </nav>
-    <a class="btn-header" href="https://wa.me/50237653725" target="_blank">Solicitar asesoría</a>
-    <button class="menu-btn" id="menuBtn">☰</button>
+    <a class="btn-header" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer">Solicitar asesoría</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#menu"/></svg></button>
 </header>
+<!--/CABECERA-->
 
 <main>
     <section class="page-hero">
+        <div class="banda-fondo" data-parallax style="background-image:url('img/estudiante.webp')"></div>
         <span class="etiqueta">Contacto</span>
         <h1>Solicita una asesoría</h1>
         <p>Completa la información y se abrirá WhatsApp con tu solicitud lista para enviar.</p>
@@ -48,9 +67,10 @@
         <div class="contacto-grid">
             <div class="contacto-info reveal">
                 <h2>Hablemos de tu proyecto</h2>
-                <p>Mientras Veritas Académica no tenga dominio propio, WhatsApp será el canal principal de contacto.</p>
-                <p><strong>WhatsApp:</strong> +502 3765-3725</p>
-                <p><strong>Ubicación:</strong> Guatemala</p>
+                <p>WhatsApp es nuestro canal principal de contacto.</p>
+                <div class="contacto-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg><div><strong>WhatsApp</strong>+502 3765-3725</div></div>
+                <div class="contacto-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#ubicacion"/></svg><div><strong>Ubicación</strong>Guatemala</div></div>
+                <div class="contacto-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#reloj"/></svg><div><strong>Atención</strong>Lunes a viernes</div></div>
 
                 <div class="mini-lista">
                     <p><strong>Antes de escribir, ten a mano:</strong></p>
@@ -62,26 +82,26 @@
                     </ul>
                 </div>
 
-                <a class="btn-primary" href="https://wa.me/50237653725" target="_blank">Escribir directamente por WhatsApp</a>
+                <a class="btn-primary" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>Escribir directamente por WhatsApp</a>
             </div>
 
-            <form class="formulario reveal">
-                <label>Nombre</label>
-                <input id="nombre" type="text" placeholder="Tu nombre completo" required>
+            <form class="formulario reveal" style="--retraso:.1s" onsubmit="event.preventDefault(); enviarWhatsApp();" novalidate>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="Tu nombre completo" autocomplete="name" required>
 
-                <label>WhatsApp</label>
-                <input id="telefono" type="text" placeholder="+502" required>
+                <label for="telefono">WhatsApp</label>
+                <input id="telefono" type="tel" placeholder="+502" autocomplete="tel" inputmode="tel" required>
 
-                <label>Correo electrónico opcional</label>
-                <input id="correo" type="email" placeholder="Tu correo electrónico">
+                <label for="correo">Correo electrónico <small>(opcional)</small></label>
+                <input id="correo" type="email" placeholder="Tu correo electrónico" autocomplete="email">
 
-                <label>Universidad o institución</label>
+                <label for="universidad">Universidad o institución</label>
                 <input id="universidad" type="text" placeholder="Nombre de tu universidad">
 
-                <label>Carrera o área</label>
+                <label for="carrera">Carrera o área</label>
                 <input id="carrera" type="text" placeholder="Ejemplo: Medicina, Derecho, Administración">
 
-                <label>Nivel académico</label>
+                <label for="nivel">Nivel académico</label>
                 <select id="nivel">
                     <option>Licenciatura</option>
                     <option>Maestría</option>
@@ -90,7 +110,7 @@
                     <option>Otro</option>
                 </select>
 
-                <label>Tipo de proyecto</label>
+                <label for="tipoProyecto">Tipo de proyecto</label>
                 <select id="tipoProyecto">
                     <option>Asesoría de tesis</option>
                     <option>Anteproyecto / plan de investigación</option>
@@ -102,7 +122,7 @@
                     <option>Otro</option>
                 </select>
 
-                <label>Estado actual del trabajo</label>
+                <label for="estadoTrabajo">Estado actual del trabajo</label>
                 <select id="estadoTrabajo">
                     <option>Solo tengo la idea</option>
                     <option>Tengo tema aprobado</option>
@@ -112,24 +132,68 @@
                     <option>Otro</option>
                 </select>
 
-                <label>Fecha aproximada de entrega</label>
+                <label for="fechaEntrega">Fecha aproximada de entrega</label>
                 <input id="fechaEntrega" type="text" placeholder="Ejemplo: dentro de 3 semanas">
 
-                <label>Mensaje</label>
+                <label for="procedencia">¿Cómo nos conociste? <small>(opcional)</small></label>
+                <select id="procedencia">
+                    <option value="">Elige una opción</option>
+                    <option>Facebook</option>
+                    <option>Instagram</option>
+                    <option>WhatsApp</option>
+                    <option>Recomendación</option>
+                    <option>Google</option>
+                    <option>Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
                 <textarea id="mensaje" placeholder="Cuéntanos qué necesitas" required></textarea>
 
-                <button type="button" onclick="enviarWhatsApp()">Enviar solicitud por WhatsApp</button>
+                <div class="form-mensaje" id="formMensaje" role="alert"></div>
+
+                <button type="submit"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>Enviar solicitud por WhatsApp</button>
+
+                <p class="form-privacidad"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#candado"/></svg>Tus datos no se guardan en esta página: solo se usan para preparar tu mensaje de WhatsApp.</p>
             </form>
         </div>
     </section>
 </main>
 
+<!--PIE-->
 <footer class="footer">
-    <div class="footer-bottom">© 2026 Veritas Académica. Todos los derechos reservados.</div>
+    <div class="footer-grid">
+        <div>
+            <img src="img/logo-veritas.png" alt="Logo Veritas Académica" class="footer-logo" width="104" height="104" loading="lazy">
+            <p>Rigor académico para alcanzar tus metas.</p>
+        </div>
+
+        <div>
+            <h4>Enlaces</h4>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="index.html#nosotros">Nosotros</a>
+            <a href="condiciones.html">Condiciones</a>
+            <a href="politicas.html">Políticas</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div>
+            <h4>Información</h4>
+            <a class="footer-dato" href="https://wa.me/50237653725" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>WhatsApp: +502 3765-3725</a>
+            <p class="footer-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#ubicacion"/></svg>Guatemala</p>
+            <p class="footer-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#reloj"/></svg>Lunes a viernes</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Veritas Académica. Todos los derechos reservados.
+    </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/50237653725" target="_blank">💬</a>
-<button class="top-button" id="topButton">↑</button>
+<a class="whatsapp-float" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg></a>
+<button class="top-button" id="topButton" aria-label="Volver arriba"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#arriba"/></svg></button>
+<!--/PIE-->
+
 <script src="js/script.js"></script>
 </body>
 </html>

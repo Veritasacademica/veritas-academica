@@ -5,48 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Políticas | Veritas Académica</title>
     <meta name="description" content="Políticas generales de comunicación, contratación, pagos, entregas, revisiones, confidencialidad y reembolsos de Veritas Académica.">
-    <meta name="keywords" content="asesoría de tesis, corrección académica, normas APA 7, tesis Guatemala, artículos científicos, metodología, Veritas Académica">
     <meta name="author" content="Veritas Académica">
-    <link rel="icon" href="img/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0B2C5D">
+    <link rel="canonical" href="https://veritasacademica.github.io/veritas-academica/politicas.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Veritas Académica">
+    <meta property="og:locale" content="es_GT">
+    <meta property="og:url" content="https://veritasacademica.github.io/veritas-academica/politicas.html">
+    <meta property="og:title" content="Políticas | Veritas Académica">
+    <meta property="og:description" content="Políticas generales de comunicación, contratación, pagos, entregas, revisiones, confidencialidad y reembolsos de Veritas Académica.">
+    <meta property="og:image" content="https://veritasacademica.github.io/veritas-academica/img/compartir.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/logo-veritas.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
 
+<!--CABECERA-->
 <div class="topbar">
     <div class="topbar-contenido">
-        <span>📱 WhatsApp: +502 3765-3725</span>
-        <span>📍 Guatemala</span>
+        <a href="https://wa.me/50237653725" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>WhatsApp: +502 3765-3725</a>
+        <span><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#ubicacion"/></svg>Guatemala · Lunes a viernes</span>
     </div>
 </div>
 
-<header class="header">
-    <a href="index.html" class="brand">
-        <img src="img/logo.png" alt="Logo Veritas Académica">
-        <div>
-            <strong>Veritas</strong>
-            <span>Académica</span>
-        </div>
+<header class="header" id="cabecera">
+    <a href="index.html" class="brand" aria-label="Veritas Académica, ir al inicio">
+        <img src="img/logo-veritas.png" alt="Logo Veritas Académica" width="58" height="58">
+        <div><strong>Veritas</strong><span>Académica</span></div>
     </a>
-
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Menú principal">
         <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
+        <a href="servicios.html" data-pagina="servicios">Servicios</a>
         <a href="index.html#nosotros">Nosotros</a>
-        <a href="condiciones.html">Condiciones</a>
-        <a href="politicas.html" class="active">Políticas</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="condiciones.html" data-pagina="condiciones">Condiciones</a>
+        <a href="politicas.html" data-pagina="politicas" class="active">Políticas</a>
+        <a href="contacto.html" data-pagina="contacto">Contacto</a>
+        <a class="btn-primary nav-cta" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer">Solicitar asesoría</a>
     </nav>
-
-    <a class="btn-header" href="https://wa.me/50237653725" target="_blank">Solicitar asesoría</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <a class="btn-header" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer">Solicitar asesoría</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#menu"/></svg></button>
 </header>
+<!--/CABECERA-->
 
 <main class="pagina-documento">
     <section class="documento-card reveal">
         <div class="documento-encabezado">
-            <img src="img/logo.png" alt="Veritas Académica">
+            <img src="img/logo-veritas.png" alt="Veritas Académica">
             <div>
                 <span class="etiqueta">Documento institucional</span>
                 <h1>Políticas de Veritas Académica</h1>
@@ -87,7 +100,7 @@
         <p>Los pagos pueden realizarse de las siguientes formas:</p>
         <ul>
             <li><strong>Pago único:</strong> 100% del valor del servicio.</li>
-            <li><strong>Pago en dos partes:</strong> 50% anticipo y 50% contra entrega final, con un recargo administrativo del <strong>5%</strong> sobre el valor total del servicio.</li>
+            <li><strong>Pago en dos partes:</strong> 50% anticipo y 50% contra entrega final, con un cargo administrativo del <strong>5%</strong> sobre el valor total del servicio.</li>
         </ul>
         <p>El servicio no inicia sin la confirmación del anticipo cuando aplique.</p>
 
@@ -131,14 +144,40 @@
     </section>
 </main>
 
+<!--PIE-->
 <footer class="footer">
+    <div class="footer-grid">
+        <div>
+            <img src="img/logo-veritas.png" alt="Logo Veritas Académica" class="footer-logo" width="104" height="104" loading="lazy">
+            <p>Rigor académico para alcanzar tus metas.</p>
+        </div>
+
+        <div>
+            <h4>Enlaces</h4>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="index.html#nosotros">Nosotros</a>
+            <a href="condiciones.html">Condiciones</a>
+            <a href="politicas.html">Políticas</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div>
+            <h4>Información</h4>
+            <a class="footer-dato" href="https://wa.me/50237653725" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>WhatsApp: +502 3765-3725</a>
+            <p class="footer-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#ubicacion"/></svg>Guatemala</p>
+            <p class="footer-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#reloj"/></svg>Lunes a viernes</p>
+        </div>
+    </div>
+
     <div class="footer-bottom">
         © 2026 Veritas Académica. Todos los derechos reservados.
     </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/50237653725" target="_blank" aria-label="WhatsApp">💬</a>
-<button class="top-button" id="topButton" aria-label="Volver arriba">↑</button>
+<a class="whatsapp-float" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg></a>
+<button class="top-button" id="topButton" aria-label="Volver arriba"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#arriba"/></svg></button>
+<!--/PIE-->
 
 <script src="js/script.js"></script>
 </body>

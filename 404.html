@@ -5,41 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página no encontrada | Veritas Académica</title>
     <meta name="description" content="La página solicitada no existe o fue movida. Regresa al inicio de Veritas Académica.">
-    <link rel="icon" href="img/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <base href="/veritas-academica/">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#0B2C5D">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
 
+<!--CABECERA-->
 <div class="topbar">
     <div class="topbar-contenido">
-        <span>📱 WhatsApp: +502 3765-3725</span>
-        <span>📍 Guatemala</span>
+        <a href="https://wa.me/50237653725" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>WhatsApp: +502 3765-3725</a>
+        <span><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#ubicacion"/></svg>Guatemala · Lunes a viernes</span>
     </div>
 </div>
 
-<header class="header">
-    <a href="index.html" class="brand">
-        <img src="img/logo.png" alt="Logo Veritas Académica">
-        <div>
-            <strong>Veritas</strong>
-            <span>Académica</span>
-        </div>
+<header class="header" id="cabecera">
+    <a href="index.html" class="brand" aria-label="Veritas Académica, ir al inicio">
+        <img src="img/logo-veritas.png" alt="Logo Veritas Académica" width="58" height="58">
+        <div><strong>Veritas</strong><span>Académica</span></div>
     </a>
-
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Menú principal">
         <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
+        <a href="servicios.html" data-pagina="servicios">Servicios</a>
         <a href="index.html#nosotros">Nosotros</a>
-        <a href="condiciones.html">Condiciones</a>
-        <a href="politicas.html">Políticas</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="condiciones.html" data-pagina="condiciones">Condiciones</a>
+        <a href="politicas.html" data-pagina="politicas">Políticas</a>
+        <a href="contacto.html" data-pagina="contacto">Contacto</a>
+        <a class="btn-primary nav-cta" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer">Solicitar asesoría</a>
     </nav>
-
-    <a class="btn-header" href="https://wa.me/50237653725" target="_blank">Solicitar asesoría</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <a class="btn-header" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer">Solicitar asesoría</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#menu"/></svg></button>
 </header>
+<!--/CABECERA-->
 
 <main>
     <section class="error-page reveal">
@@ -57,14 +61,40 @@
     </section>
 </main>
 
+<!--PIE-->
 <footer class="footer">
+    <div class="footer-grid">
+        <div>
+            <img src="img/logo-veritas.png" alt="Logo Veritas Académica" class="footer-logo" width="104" height="104" loading="lazy">
+            <p>Rigor académico para alcanzar tus metas.</p>
+        </div>
+
+        <div>
+            <h4>Enlaces</h4>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="index.html#nosotros">Nosotros</a>
+            <a href="condiciones.html">Condiciones</a>
+            <a href="politicas.html">Políticas</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div>
+            <h4>Información</h4>
+            <a class="footer-dato" href="https://wa.me/50237653725" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg>WhatsApp: +502 3765-3725</a>
+            <p class="footer-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#ubicacion"/></svg>Guatemala</p>
+            <p class="footer-dato"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#reloj"/></svg>Lunes a viernes</p>
+        </div>
+    </div>
+
     <div class="footer-bottom">
         © 2026 Veritas Académica. Todos los derechos reservados.
     </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/50237653725" target="_blank" aria-label="WhatsApp">💬</a>
-<button class="top-button" id="topButton" aria-label="Volver arriba">↑</button>
+<a class="whatsapp-float" href="https://wa.me/50237653725?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20asesor%C3%ADa%20acad%C3%A9mica." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#whatsapp"/></svg></a>
+<button class="top-button" id="topButton" aria-label="Volver arriba"><svg class="ico" aria-hidden="true"><use href="img/iconos.svg#arriba"/></svg></button>
+<!--/PIE-->
 
 <script src="js/script.js"></script>
 </body>
