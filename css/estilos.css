@@ -220,7 +220,7 @@ img{max-width:100%;display:block}
 /* Pie */
 .footer{background:var(--azul-noche);color:#D7E1EF;padding:70px max(6%,36px) 26px;position:relative}
 .footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--dorado),transparent)}
-.footer-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.6fr 1fr 1.3fr;gap:48px}
+.footer-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1.1fr 1.3fr;gap:40px}
 .footer-logo{width:104px;background:#fff;border-radius:14px;padding:6px;margin-bottom:18px;box-shadow:0 10px 26px rgba(0,0,0,.25)}
 .footer h4{color:#fff;margin-bottom:18px;font-family:var(--serif);font-size:19px}
 .footer a{display:block;color:#C8D4E5;text-decoration:none;margin-bottom:10px;font-size:14.5px;transition:color .2s,transform .2s}
@@ -284,6 +284,46 @@ img{max-width:100%;display:block}
 .form-mensaje.visible{display:block;background:#FFF4EC;color:#7A3A1C;border:1px solid #F0C9AE}
 .form-privacidad{font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:flex-start;line-height:1.5}
 .form-privacidad .ico{color:var(--dorado-oscuro);font-size:16px;margin-top:1px}
+
+/* Páginas de cada servicio */
+.miga{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;font-size:13.5px;color:#C8D4E5;margin-bottom:18px}
+.miga a{color:#fff;text-decoration:none}
+.miga a:hover{color:var(--dorado-claro)}
+.page-hero .hero-botones{justify-content:center;margin-top:30px}
+.page-hero .btn-secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.page-hero .btn-secondary:hover{background:#fff;color:var(--azul)}
+.incluye-grid{max-width:1080px;margin:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.item-check{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--borde);border-radius:14px;padding:20px 22px;box-shadow:var(--sombra-suave)}
+.item-check .ico{flex:none;font-size:22px;color:#fff;background:var(--azul);border-radius:50%;padding:5px;box-sizing:content-box}
+.item-check strong{display:block;color:var(--azul);margin-bottom:3px}
+.item-check p{color:var(--muted);font-size:15px;line-height:1.65}
+.dos-columnas{max-width:1120px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.bloque{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);padding:32px;box-shadow:var(--sombra-suave);height:100%}
+.bloque h2{font-family:var(--serif);color:var(--azul);font-size:28px;line-height:1.2;margin:8px 0 18px}
+.lista-check{list-style:none;display:grid;gap:12px}
+.lista-check li{position:relative;padding-left:30px;color:#3D4C60;line-height:1.6}
+.lista-check li::before{content:"";position:absolute;left:0;top:3px;width:19px;height:19px;border-radius:50%;background:rgba(200,162,76,.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239B772C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.pasos-lista{list-style:none;counter-reset:paso;display:grid;gap:16px}
+.pasos-lista li{counter-increment:paso;display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start;color:#3D4C60;line-height:1.6}
+.pasos-lista li::before{content:counter(paso);width:38px;height:38px;border-radius:50%;border:2px solid var(--dorado);color:var(--azul);font-family:var(--serif);font-weight:700;display:flex;align-items:center;justify-content:center}
+.pasos-lista strong{display:block;color:var(--azul)}
+.modalidad{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.modalidad span{display:inline-flex;align-items:center;gap:8px;background:var(--gris);border:1px solid var(--borde);border-radius:999px;padding:8px 14px;font-size:14px;color:var(--azul);font-weight:600}
+.modalidad .ico{color:var(--dorado-oscuro);font-size:17px}
+.nota-etica{max-width:900px;margin:0 auto;display:flex;gap:18px;align-items:flex-start;background:#FFF9E9;border:1px solid rgba(200,162,76,.35);border-left:4px solid var(--dorado);border-radius:14px;padding:22px 24px}
+.nota-etica .ico{flex:none;font-size:28px;color:var(--dorado-oscuro)}
+.nota-etica strong{display:block;color:var(--azul);font-family:var(--serif);font-size:19px;margin-bottom:4px}
+.nota-etica p{color:#4A5568;line-height:1.7}
+.otros-servicios{max-width:1120px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.otro{display:flex;flex-direction:column;gap:10px;text-decoration:none;background:#fff;border:1px solid var(--borde);border-radius:16px;padding:22px;box-shadow:var(--sombra-suave);transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.otro:hover{transform:translateY(-4px);box-shadow:var(--sombra);border-color:rgba(200,162,76,.4)}
+.otro .icono{margin:0;width:46px;height:46px;font-size:22px}
+.otro strong{color:var(--azul);font-family:var(--serif);font-size:18px;line-height:1.25}
+.otro span{display:inline-flex;align-items:center;gap:6px;color:var(--dorado-oscuro);font-size:14px;font-weight:700;margin-top:auto}
+a.card{text-decoration:none;color:inherit;display:block}
+.card-enlace{display:inline-flex;align-items:center;gap:6px;margin-top:14px;color:var(--dorado-oscuro);font-weight:700;font-size:14px}
+.card-enlace .ico{transition:transform .25s var(--ease)}
+a.card:hover .card-enlace .ico{transform:translateX(4px)}
 
 /* 404 */
 .error-page{min-height:62vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px max(6%,36px);background:linear-gradient(180deg,#F7F9FC 0%,#fff 100%)}
@@ -349,6 +389,8 @@ img{max-width:100%;display:block}
   .nosotros-foto{max-width:520px;margin:0 auto;width:calc(100% - 22px)}
   .revision-card{flex-direction:column;align-items:flex-start}
   .contacto-info{position:static}
+  .dos-columnas{grid-template-columns:1fr}
+  .otros-servicios{grid-template-columns:repeat(2,1fr)}
   .documento-encabezado{flex-direction:column;text-align:center}
   .banda-fondo{inset:0}
 }
@@ -370,6 +412,13 @@ img{max-width:100%;display:block}
   .confianza-item{padding:12px 0}
   .seccion{padding:72px 16px}
   .grid-servicios,.grid-servicios.grande{grid-template-columns:1fr}
+  .incluye-grid{grid-template-columns:1fr}
+  .otros-servicios{gap:12px}
+  .otro{padding:16px}
+  .otro strong{font-size:16px}
+  .bloque{padding:26px 20px}
+  .nota-etica{flex-direction:column;gap:10px}
+  .page-hero .hero-botones .btn-primary,.page-hero .hero-botones .btn-secondary{width:100%}
   .card,.razon,.paquete{padding:26px 22px}
   .banda,.etica,.cta-final{padding:86px 16px}
   .etica::before{background:linear-gradient(180deg,rgba(4,19,41,.93),rgba(6,24,51,.86))}
