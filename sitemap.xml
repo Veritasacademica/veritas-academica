@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://veritasacademica.github.io/veritas-academica/</loc>
-        <priority>1.0</priority>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://veritasacademica.github.io/veritas-academica/servicios.html</loc>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://veritasacademica.github.io/veritas-academica/condiciones.html</loc>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://veritasacademica.github.io/veritas-academica/politicas.html</loc>
-        <priority>0.7</priority>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://veritasacademica.github.io/veritas-academica/contacto.html</loc>
-        <priority>0.9</priority>
+        <lastmod>2026-11-09</lastmod>
+    </url>
+    <url>
+        <loc>https://veritasacademica.github.io/veritas-academica/condiciones.html</loc>
+        <lastmod>2026-11-09</lastmod>
+    </url>
+    <url>
+        <loc>https://veritasacademica.github.io/veritas-academica/politicas.html</loc>
+        <lastmod>2026-11-09</lastmod>
     </url>
 </urlset>
